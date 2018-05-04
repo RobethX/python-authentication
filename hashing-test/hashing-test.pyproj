@@ -7,10 +7,12 @@
     <StartupFile>hashing_test.py</StartupFile>
     <SearchPath>
     </SearchPath>
-    <WorkingDirectory>.</WorkingDirectory>
+    <WorkingDirectory>
+    </WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>hashing-test</Name>
     <RootNamespace>hashing-test</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +24,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="hashing_test.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="requirements.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
